@@ -54,7 +54,7 @@ const valencianText = {
   "Navegación principal": "Navegació principal",
   "Última hora": "Última hora",
   "Noticias más recientes": "Notícies més recents",
-  "Marina Alta al Día: noticias de actualidad, sucesos, política, deportes, cultura y fiestas de la Marina Alta, Alicante.": "Marina Alta al Dia: notícies d'actualitat, successos, política, esports, cultura i festes de la Marina Alta, Alacant.",
+  "El Vèrtex: noticias de actualidad, sucesos, política, deportes, cultura y fiestas de la Marina Alta, Alicante.": "El Vèrtex: notícies d'actualitat, successos, política, esports, cultura i festes de la Marina Alta, Alacant.",
   "SIGUE LA CONVERSACIÓN": "SEGUEIX LA CONVERSA",
   "Las noticias también": "Les notícies també",
   "se comparten.": "es comparteixen.",
@@ -63,7 +63,7 @@ const valencianText = {
   "LA HISTORIA DEL DÍA": "LA HISTÒRIA DEL DIA",
   "Las ciudades buscan nuevas formas de mirar al futuro": "Les ciutats busquen noves maneres de mirar cap al futur",
   "Proyectos locales, ideas compartidas y una ciudadanía cada vez más activa dibujan el mapa de una transformación que empieza en los barrios.": "Projectes locals, idees compartides i una ciutadania cada vegada més activa dibuixen el mapa d'una transformació que comença als barris.",
-  "Por Redacción Marina Alta al Día": "Per Redacció Marina Alta al Dia",
+  "Por Redacción": "Per Redacció",
   "26 oct 2026": "26 oct. 2026",
   "6 min de lectura": "6 min de lectura",
   "Leer reportaje": "Llegir el reportatge",
@@ -138,7 +138,7 @@ const valencianText = {
   "EXPLORA": "EXPLORA",
   "CONTACTO": "CONTACTE",
   "SÍGUENOS": "SEGUEIX-NOS",
-  "© 2026 Marina Alta al Día. Todos los derechos reservados.": "© 2026 Marina Alta al Dia. Tots els drets reservats.",
+  "© 2026 El Vèrtex. Todos los derechos reservados.": "© 2026 El Vèrtex. Tots els drets reservats.",
   "Aviso legal": "Avís legal",
   "Privacidad": "Privacitat",
   "Hecho para informar.": "Fet per a informar.",
@@ -184,9 +184,9 @@ const valencianText = {
   "Leer noticia sobre el programa de fiestas": "Llegir notícia sobre el programa de festes",
   "Leer noticia sobre las comisiones festivas": "Llegir notícia sobre les comissions festives",
   "Leer noticia sobre tradiciones locales": "Llegir notícia sobre tradicions locals",
-  "Marina Alta al Día — La actualidad, de frente": "Marina Alta al Dia — L'actualitat, de cara",
-  "Marina Alta al Día: noticias de actualidad, sucesos, deportes y política de la Marina Alta, Alicante.": "Marina Alta al Dia: notícies d'actualitat, successos, esports i política de la Marina Alta, Alacant.",
-  "Marina Alta al Día, ir al inicio": "Marina Alta al Dia, anar a l'inici",
+  "El Vèrtex — Actualidad, de frente": "El Vèrtex — L'actualitat, de cara",
+  "El Vèrtex: noticias de actualidad, sucesos, política, deportes, cultura y fiestas de la Marina Alta, Alicante.": "El Vèrtex: notícies d'actualitat, successos, política, esports, cultura i festes de la Marina Alta, Alacant.",
+  "El Vèrtex, ir al inicio": "El Vèrtex, anar a l'inici",
   "Navegación principal": "Navegació principal",
   "Noticias más recientes": "Notícies més recents",
   "Canviar a valencià": "Canviar a valencià",
@@ -237,8 +237,8 @@ function setLanguage(language) {
 
   document.documentElement.lang = isValencian ? "ca-valencia" : "es";
   document.title = isValencian
-    ? valencianText["Marina Alta al Día — La actualidad, de frente"]
-    : "Marina Alta al Día — La actualidad, de frente";
+    ? valencianText["El Vèrtex — Actualidad, de frente"]
+    : "El Vèrtex — Actualidad, de frente";
   languageToggle.textContent = isValencian ? "Castellano" : "Valencià";
   languageToggle.setAttribute("aria-label", isValencian ? "Canvia a castellà" : "Cambiar a valenciano");
 }
