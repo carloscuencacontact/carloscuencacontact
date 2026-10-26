@@ -1,4 +1,51 @@
 const valencianText = {
+  "EDICIÓN DE EJEMPLO · Contenido ficticio para la maqueta": "EDICIÓ D'EXEMPLE · Contingut fictici per a la maqueta",
+  "Ampliar noticia": "Ampliar notícia",
+  "PATRIMONIO": "PATRIMONI",
+  "PUERTO Y MAR": "PORT I MAR",
+  "VIVIENDA": "HABITATGE",
+  "Vecinos de Dénia proponen una red de sombra para las plazas más concurridas": "Veïns de Dénia proposen una xarxa d'ombra per a les places més concorregudes",
+  "La idea plantea instalar espacios de sombra temporales y organizar actividades vecinales en varias plazas de la ciudad.": "La idea planteja instal·lar espais d'ombra temporals i organitzar activitats veïnals en diverses places de la ciutat.",
+  "Dénia prepara un ciclo de cine al aire libre en sus barrios": "Dénia prepara un cicle de cinema a l'aire lliure als seus barris",
+  "La propuesta acerca proyecciones y actividades culturales gratuitas a distintos espacios del municipio.": "La proposta acosta projeccions i activitats culturals gratuïtes a diferents espais del municipi.",
+  "Jóvenes de Dénia impulsan un mapa digital de comercios y talleres locales": "Joves de Dénia impulsen un mapa digital de comerços i tallers locals",
+  "El proyecto reúne recursos de proximidad y busca dar visibilidad a iniciativas creadas por jóvenes de la ciudad.": "El projecte reuneix recursos de proximitat i busca donar visibilitat a iniciatives creades per joves de la ciutat.",
+  "Dénia plantea reforzar los autobuses entre el centro y Les Marines": "Dénia planteja reforçar els autobusos entre el centre i les Marines",
+  "Una propuesta vecinal pide revisar frecuencias y paradas para facilitar los trayectos entre el casco urbano y la costa.": "Una proposta veïnal demana revisar freqüències i parades per a facilitar els trajectes entre el nucli urbà i la costa.",
+  "Entidades de Dénia organizan una jornada de limpieza de la costa": "Entitats de Dénia organitzen una jornada de neteja de la costa",
+  "La actividad propone recorrer varios tramos del litoral y compartir consejos para reducir residuos en el mar.": "L'activitat proposa recórrer diversos trams del litoral i compartir consells per a reduir residus a la mar.",
+  "Colegios de Dénia preparan talleres sobre el mar Mediterráneo": "Escoles de Dénia preparen tallers sobre la mar Mediterrània",
+  "La propuesta educativa combina actividades en el aula con recursos para conocer mejor el entorno marino local.": "La proposta educativa combina activitats a l'aula amb recursos per a conèixer millor l'entorn marí local.",
+  "Dénia plantea una campaña de prevención y convivencia para las noches de verano": "Dénia planteja una campanya de prevenció i convivència per a les nits d'estiu",
+  "La propuesta reúne recomendaciones para disfrutar de los espacios públicos y cuidar el descanso vecinal.": "La proposta reuneix recomanacions per a gaudir dels espais públics i cuidar el descans veïnal.",
+  "El archivo de Dénia prepara una muestra sobre la historia del puerto": "L'arxiu de Dénia prepara una mostra sobre la història del port",
+  "La exposición reunirá fotografías y documentos para acercar la memoria marítima local a nuevos públicos.": "L'exposició reunirà fotografies i documents per a acostar la memòria marítima local a nous públics.",
+  "Obras de mejora en una calle de Dénia exigirán desvíos temporales": "Obres de millora en un carrer de Dénia exigiran desviaments temporals",
+  "El plan de circulación alternativo prioriza el acceso a viviendas y comercios durante las tareas.": "El pla de circulació alternatiu prioritza l'accés a habitatges i comerços durant els treballs.",
+  "El pleno de Dénia debate propuestas para mejorar la movilidad urbana": "El ple de Dénia debat propostes per a millorar la mobilitat urbana",
+  "La sesión pone sobre la mesa ideas para facilitar los desplazamientos cotidianos a pie, en bici y en transporte público.": "La sessió posa sobre la taula idees per a facilitar els desplaçaments quotidians a peu, amb bicicleta i en transport públic.",
+  "Asociaciones de Dénia abren un diálogo sobre el futuro del puerto": "Associacions de Dénia obrin un diàleg sobre el futur del port",
+  "Entidades locales y representantes del sector marítimo comparten propuestas para compatibilizar actividad y entorno.": "Entitats locals i representants del sector marítim comparteixen propostes per a compatibilitzar activitat i entorn.",
+  "Una propuesta de alquiler asequible para jóvenes centra el debate en Dénia": "Una proposta de lloguer assequible per a joves centra el debat a Dénia",
+  "La iniciativa plantea explorar fórmulas de colaboración para ampliar las opciones residenciales de la población joven.": "La iniciativa planteja explorar fórmules de col·laboració per a ampliar les opcions residencials de la població jove.",
+  "El CD Dénia prepara su próximo partido con una convocatoria abierta a la afición": "El CD Dénia prepara el pròxim partit amb una convocatòria oberta a l'afició",
+  "El club invita a la grada a acompañar al equipo y anima a las familias a acercarse al campo.": "El club convida la grada a acompanyar l'equip i anima les famílies a acostar-se al camp.",
+  "Dénia amplía la oferta de deporte base para adolescentes": "Dénia amplia l'oferta d'esport base per a adolescents",
+  "La propuesta combina entrenamientos semanales y actividades abiertas para probar distintas disciplinas.": "La proposta combina entrenaments setmanals i activitats obertes per a provar diferents disciplines.",
+  "La carrera popular de Dénia anuncia recorrido y abre inscripciones": "La cursa popular de Dénia anuncia el recorregut i obri les inscripcions",
+  "La prueba plantea un trazado urbano con opciones para distintos niveles y edades.": "La prova planteja un traçat urbà amb opcions per a diferents nivells i edats.",
+  "Una exposición en Dénia reúne obras inspiradas en la Marina Alta": "Una exposició a Dénia reuneix obres inspirades en la Marina Alta",
+  "La muestra reúne distintas miradas artísticas sobre el paisaje y la vida cotidiana de la comarca.": "La mostra reuneix diferents mirades artístiques sobre el paisatge i la vida quotidiana de la comarca.",
+  "Dénia programa conciertos gratuitos en distintos espacios del municipio": "Dénia programa concerts gratuïts en diferents espais del municipi",
+  "El ciclo plantea actuaciones al aire libre y propuestas para acercar la música a públicos diversos.": "El cicle planteja actuacions a l'aire lliure i propostes per a acostar la música a públics diversos.",
+  "La biblioteca de Dénia lanza un club de lectura de autores valencianos": "La biblioteca de Dénia llança un club de lectura d'autors valencians",
+  "La iniciativa propone encuentros periódicos para compartir lecturas y conversar con la comunidad.": "La iniciativa proposa trobades periòdiques per a compartir lectures i conversar amb la comunitat.",
+  "Dénia presenta un calendario de actos para sus fiestas locales": "Dénia presenta un calendari d'actes per a les seues festes locals",
+  "La programación de ejemplo combina actividades culturales, música y propuestas para distintos públicos.": "La programació d'exemple combina activitats culturals, música i propostes per a diferents públics.",
+  "Las comisiones de Dénia abren la inscripción para colaborar en las fiestas": "Les comissions de Dénia obrin la inscripció per a col·laborar en les festes",
+  "La convocatoria invita a vecinas y vecinos a participar en la preparación de actividades y encuentros.": "La convocatòria convida veïnes i veïns a participar en la preparació d'activitats i trobades.",
+  "Dénia recupera relatos y fotografías de su tradición marinera": "Dénia recupera relats i fotografies de la seua tradició marinera",
+  "La jornada invita a compartir recuerdos familiares y materiales sobre la historia del litoral local.": "La jornada convida a compartir records familiars i materials sobre la història del litoral local.",
   "INFORMACIÓN INDEPENDIENTE": "INFORMACIÓ INDEPENDENT",
   "Lunes, 26 de octubre de 2026": "Dilluns, 26 d'octubre de 2026",
   "al día.": "al dia.",
@@ -218,6 +265,12 @@ for (const card of document.querySelectorAll(".story-card, .news-card")) {
 
   const articleUrl = `noticia.html?id=${storySlug(title.textContent.trim())}`;
   for (const link of card.querySelectorAll("a")) link.href = articleUrl;
+
+  const readMore = document.createElement("a");
+  readMore.className = "read-more story-read-more";
+  readMore.href = articleUrl;
+  readMore.append("Ampliar noticia ", Object.assign(document.createElement("span"), { textContent: "→" }));
+  card.querySelector(".story-content").append(readMore);
 }
 
 const languageToggle = document.querySelector("#language-toggle");
