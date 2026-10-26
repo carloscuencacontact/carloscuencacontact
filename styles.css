@@ -111,6 +111,20 @@ img { display: block; width: 100%; height: 100%; object-fit: cover; }
 .footer-bottom { display: flex; justify-content: space-between; gap: 20px; padding-top: 16px; border-top: 1px solid #444; color: #9e9e9e; font-size: 9px; }
 .footer-bottom div { display: flex; flex-wrap: wrap; gap: 20px; }
 
+.article-home-link, .article-back-link { color: var(--accent); font-size: 11px; font-weight: 700; }
+.article-home-link:hover, .article-back-link:hover { color: var(--ink); }
+.article-page { min-height: 60vh; padding-top: 36px; padding-bottom: 64px; }
+.article-back-link { display: inline-block; margin-bottom: 32px; }
+.article-header { max-width: 780px; margin: 0 auto 28px; }
+.article-header h1, .article-not-found h1 { margin: 12px 0; font-family: var(--serif); font-size: clamp(32px, 5vw, 54px); font-weight: 600; letter-spacing: -.035em; line-height: 1.12; }
+.article-summary { margin: 0 0 18px; color: #666; font-size: 16px; line-height: 1.7; }
+.article-meta { display: flex; flex-wrap: wrap; gap: 10px; color: var(--muted); font-size: 10px; }
+.article-meta span + span::before { margin-right: 10px; content: "·"; }
+.article-figure { max-width: 920px; margin: 0 auto 30px; }
+.article-figure img { height: auto; max-height: 560px; aspect-ratio: 1.65; object-fit: cover; }
+.article-not-found { max-width: 700px; margin: 80px auto; }
+.article-not-found p { color: #666; line-height: 1.7; }
+
 @media (max-width: 900px) {
   .news-card-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .footer-main { grid-template-columns: repeat(2, minmax(0, 1fr)); }
@@ -121,6 +135,10 @@ img { display: block; width: 100%; height: 100%; object-fit: cover; }
   .topline { font-size: 8px; }
   .edition { font-size: 8px; }
   .header-main { height: 80px; }
+  .article-page { padding-top: 28px; padding-bottom: 42px; }
+  .article-back-link { margin-bottom: 24px; }
+  .article-summary { font-size: 14px; }
+  .article-figure { margin-bottom: 22px; }
   .language-toggle { padding: 10px 8px; font-size: 9px; }
   .nav-inner { flex-wrap: wrap; justify-content: flex-start; gap: 0 20px; height: auto; min-height: 47px; padding-block: 4px; }
   .nav-link { flex: 0 0 auto; font-size: 11px; }

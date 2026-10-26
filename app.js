@@ -205,6 +205,21 @@ const spanishText = Object.fromEntries(
   Object.entries(valencianText).map(([spanish, valencian]) => [valencian, spanish])
 );
 
+const storySlug = title => title
+  .normalize("NFD")
+  .replace(/[\u0300-\u036f]/g, "")
+  .toLowerCase()
+  .replace(/[^a-z0-9]+/g, "-")
+  .replace(/^-|-$/g, "");
+
+for (const card of document.querySelectorAll(".story-card, .news-card")) {
+  const title = card.querySelector(".story-content h2 a, .story-content h3 a");
+  if (!title) continue;
+
+  const articleUrl = `noticia.html?id=${storySlug(title.textContent.trim())}`;
+  for (const link of card.querySelectorAll("a")) link.href = articleUrl;
+}
+
 const languageToggle = document.querySelector("#language-toggle");
 const textWalker = document.createTreeWalker(document.body, NodeFilter.SHOW_TEXT);
 const textNodes = [];

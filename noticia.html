@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#f2f2f2">
+    <meta name="description" content="Lee la noticia completa en El Vèrtex.">
+    <title>Noticia — El Vèrtex</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <div class="topline">
+      <div class="container topline-inner">
+        <span class="edition">Lunes, 26 de octubre de 2026</span>
+      </div>
+    </div>
+    <header class="site-header">
+      <div class="container header-main">
+        <a class="brand" href="index.html" aria-label="El Vèrtex, ir al inicio">
+          <img class="brand-logo" src="assets/el_vèrtex_logo_1.png" alt="El Vèrtex">
+        </a>
+        <a class="article-home-link" href="index.html">Volver a las noticias</a>
+      </div>
+    </header>
+    <main class="container article-page">
+      <article id="article" hidden>
+        <a class="article-back-link" href="index.html">← Volver a todas las noticias</a>
+        <header class="article-header">
+          <span class="story-category" id="article-category"></span>
+          <h1 id="article-title"></h1>
+          <p class="article-summary" id="article-summary"></p>
+          <div class="article-meta">
+            <span>Por Redacción</span>
+            <span id="article-date"></span>
+            <span id="article-reading-time"></span>
+          </div>
+        </header>
+        <figure class="article-figure">
+          <img id="article-image" alt="">
+        </figure>
+      </article>
+      <div class="article-not-found" id="article-not-found" role="status" hidden>
+        <h1>No encontramos esta noticia</h1>
+        <p>Puede que el enlace no sea válido o que la noticia ya no esté disponible.</p>
+        <a class="read-more" href="index.html">Volver a las noticias <span>→</span></a>
+      </div>
+    </main>
+    <footer class="site-footer">
+      <div class="container footer-bottom">
+        <span>© 2026 El Vèrtex. Todos los derechos reservados.</span>
+        <a href="index.html">Inicio</a>
+      </div>
+    </footer>
+    <script src="noticia.js"></script>
+  </body>
+</html>
