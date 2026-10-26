@@ -12,6 +12,7 @@ const submitButtons = [...articleForm.querySelectorAll('button[type="submit"]')]
 function showMessage(target, message, kind = "") {
   target.textContent = message;
   target.dataset.kind = kind;
+  window.elvertexSetLanguage?.(window.elvertexLanguage || "es");
 }
 
 function articleSlug(title) {
@@ -99,6 +100,7 @@ function createArticleListItem(article) {
   actions.append(deleteButton);
 
   item.append(details, actions);
+  window.elvertexSetLanguage?.(window.elvertexLanguage || "es");
   return item;
 }
 

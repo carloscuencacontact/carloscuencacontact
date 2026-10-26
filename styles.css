@@ -154,7 +154,6 @@ img { display: block; width: 100%; height: 100%; object-fit: cover; }
 .editorial-list-actions { display: flex; flex-wrap: wrap; gap: 8px; }
 .editorial-list-actions button { padding: 8px 10px; border: 1px solid var(--line); background: transparent; color: var(--ink); font: inherit; font-size: 11px; cursor: pointer; }
 .editorial-list-actions button:hover { background: #eee; }
-.published-news-status { margin: 0 0 16px; color: #8a4e21; font-size: 12px; }
 .news-card-image img { height: 100%; }
 
 @media (max-width: 900px) {
