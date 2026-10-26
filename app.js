@@ -1,6 +1,12 @@
 const valencianText = {
-  "EDICIÓN DE EJEMPLO · Contenido ficticio para la maqueta": "EDICIÓ D'EXEMPLE · Contingut fictici per a la maqueta",
-  "Ampliar noticia": "Ampliar notícia",
+  "DÉNIA Y MARINA ALTA": "DÉNIA I MARINA ALTA",
+  "TRANSPORTE URBANO": "TRANSPORT URBÀ",
+  "El Bus Dénia alcanza los 68.700 viajeros en agosto, un 30,9% más que en 2019": "El Bus Dénia arriba als 68.700 viatgers a l'agost, un 30,9% més que el 2019",
+  "La línea L3, que conecta con las playas, sumó 41.540 pasajeros y concentró el 60,5% de los viajes del servicio durante el mes.": "La línia L3, que connecta amb les platges, va sumar 41.540 passatgers i va concentrar el 60,5% dels viatges del servei durant el mes.",
+  "El servicio registró 68.700 pasajeros en agosto. La línea L3, que conecta con las playas, concentró el 60,5% de los viajes.": "El servei va registrar 68.700 passatgers a l'agost. La línia L3, que connecta amb les platges, va concentrar el 60,5% dels viatges.",
+  "Leer noticia sobre el Bus Dénia": "Llegir notícia sobre el Bus Dénia",
+  "Datos de agosto": "Dades d'agost",
+  "Autobús de la línea 3 de Dénia": "Autobús de la línia 3 de Dénia",
   "PATRIMONIO": "PATRIMONI",
   "PUERTO Y MAR": "PORT I MAR",
   "VIVIENDA": "HABITATGE",
@@ -41,7 +47,7 @@ const valencianText = {
   "La biblioteca de Dénia lanza un club de lectura de autores valencianos": "La biblioteca de Dénia llança un club de lectura d'autors valencians",
   "La iniciativa propone encuentros periódicos para compartir lecturas y conversar con la comunidad.": "La iniciativa proposa trobades periòdiques per a compartir lectures i conversar amb la comunitat.",
   "Dénia presenta un calendario de actos para sus fiestas locales": "Dénia presenta un calendari d'actes per a les seues festes locals",
-  "La programación de ejemplo combina actividades culturales, música y propuestas para distintos públicos.": "La programació d'exemple combina activitats culturals, música i propostes per a diferents públics.",
+  "La programación reúne actividades culturales, música y propuestas para distintos públicos.": "La programació reuneix activitats culturals, música i propostes per a diferents públics.",
   "Las comisiones de Dénia abren la inscripción para colaborar en las fiestas": "Les comissions de Dénia obrin la inscripció per a col·laborar en les festes",
   "La convocatoria invita a vecinas y vecinos a participar en la preparación de actividades y encuentros.": "La convocatòria convida veïnes i veïns a participar en la preparació d'activitats i trobades.",
   "Dénia recupera relatos y fotografías de su tradición marinera": "Dénia recupera relats i fotografies de la seua tradició marinera",
@@ -265,12 +271,6 @@ for (const card of document.querySelectorAll(".story-card, .news-card")) {
 
   const articleUrl = `noticia.html?id=${storySlug(title.textContent.trim())}`;
   for (const link of card.querySelectorAll("a")) link.href = articleUrl;
-
-  const readMore = document.createElement("a");
-  readMore.className = "read-more story-read-more";
-  readMore.href = articleUrl;
-  readMore.append("Ampliar noticia ", Object.assign(document.createElement("span"), { textContent: "→" }));
-  card.querySelector(".story-content").append(readMore);
 }
 
 const languageToggle = document.querySelector("#language-toggle");

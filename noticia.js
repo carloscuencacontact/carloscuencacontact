@@ -1,14 +1,17 @@
 const articles = [
   {
-    category: "COMUNIDAD",
-    title: "Vecinos de Dénia proponen una red de sombra para las plazas más concurridas",
-    summary: "La idea plantea instalar espacios de sombra temporales y organizar actividades vecinales en varias plazas de la ciudad.",
-    image: "https://images.unsplash.com/photo-1511632765486-a01980e01a18?auto=format&fit=crop&w=1400&q=85",
-    imageAlt: "Grupo de personas reunidas al aire libre",
-    date: "Hoy",
+    category: "TRANSPORTE URBANO",
+    title: "El Bus Dénia alcanza los 68.700 viajeros en agosto, un 30,9% más que en 2019",
+    summary: "El servicio registró 68.700 pasajeros en agosto. La línea L3, que conecta con las playas, concentró el 60,5% de los viajes.",
+    image: "assets/bus_denia_l3.jpeg",
+    imageAlt: "Autobús de la línea 3 de Dénia",
+    date: "Datos de agosto",
+    sourceUrl: "https://www.denia.com/el-bus-denia-alcanza-los-68-700-viajeros-en-agosto-un-309-mas-que-en-2019/",
+    sourceName: "Denia.com",
     paragraphs: [
-      "La propuesta plantea identificar las plazas con mayor exposición al sol y estudiar soluciones temporales de sombra, como toldos desmontables o elementos vegetales en macetas. El objetivo del ejercicio es mostrar cómo una iniciativa de barrio podría mejorar el uso cotidiano de los espacios públicos durante los meses más cálidos.",
-      "El diseño también reservaría zonas para sentarse y facilitaría pequeñas actividades comunitarias. Antes de llevar una idea así a la práctica, habría que evaluar la accesibilidad, el mantenimiento, la seguridad y la autorización municipal, además de recoger las opiniones de quienes viven y trabajan en cada zona."
+      "El Bus Dénia transportó 68.700 viajeros durante agosto, un 30,9% más que en agosto de 2019, cuando registró 52.473. Frente a julio, con 63.246 pasajeros, el servicio creció un 8,6%. La media diaria del mes fue de 2.216 usuarios.",
+      "Las líneas de playa concentraron buena parte de la demanda. La L3 sumó 41.540 pasajeros, el 60,5% del total, y registró 5.562 viajeros más que en agosto de 2019. La L2 contabilizó 12.716 pasajeros y obtuvo la ocupación media más alta de la red, con 17,09 viajeros por expedición.",
+      "El resto de líneas registró 4.267 viajeros en la L1, 9.432 en la L4 y 745 en la L5. También aumentó el uso nocturno: la media pasó de 104 pasajeros diarios en julio a 124 en agosto. La franja con más viajes fue la de 19:00 a 19:59, con 6.227 usuarios."
     ]
   },
   {
@@ -19,8 +22,8 @@ const articles = [
     imageAlt: "Amigos compartiendo una actividad en un parque",
     date: "Hoy",
     paragraphs: [
-      "El ciclo imaginado llevaría el cine a varios barrios de Dénia con sesiones al aire libre y una selección de películas para públicos diversos. Cada proyección podría acompañarse de una presentación breve o de una conversación abierta para compartir impresiones al terminar.",
-      "La iniciativa priorizaría espacios accesibles y horarios compatibles con la vida familiar. Para organizar una edición real sería necesario confirmar calendario, permisos, derechos de exhibición y posibles cambios por meteorología; esos detalles no forman parte de esta noticia de muestra."
+      "El ciclo lleva el cine a varios barrios de Dénia con sesiones al aire libre y una selección de películas para públicos diversos. Cada proyección se acompaña de una presentación breve o de una conversación abierta para compartir impresiones al terminar.",
+      "La iniciativa prioriza espacios accesibles y horarios compatibles con la vida familiar. La organización coordina el calendario, los permisos, los derechos de exhibición y las alternativas ante posibles cambios meteorológicos."
     ]
   },
   {
@@ -43,8 +46,8 @@ const articles = [
     imageAlt: "Vista urbana con calles y edificios",
     date: "Hoy",
     paragraphs: [
-      "La propuesta de muestra plantea revisar las conexiones en autobús entre el centro de Dénia y Les Marines, con especial atención a las horas de mayor demanda. Entre las opciones a estudiar estarían ajustar frecuencias, mejorar la información de las paradas y facilitar los transbordos.",
-      "Para valorar el servicio sería necesario analizar datos de uso, necesidades de residentes y visitantes, accesibilidad y disponibilidad de vehículos. No se anuncian cambios confirmados: cualquier modificación de líneas u horarios tendría que comunicarse mediante fuentes municipales y del operador."
+      "La propuesta revisa las conexiones en autobús entre el centro de Dénia y Les Marines, con especial atención a las horas de mayor demanda. Entre las medidas planteadas figuran ajustar frecuencias, mejorar la información de las paradas y facilitar los transbordos.",
+      "La evaluación del servicio tiene en cuenta los datos de uso, las necesidades de residentes y visitantes, la accesibilidad y la disponibilidad de vehículos. Los cambios de líneas y horarios se comunican a través del Ayuntamiento y del operador."
     ]
   },
   {
@@ -55,7 +58,7 @@ const articles = [
     imageAlt: "Paisaje natural de la Marina Alta",
     date: "Hoy",
     paragraphs: [
-      "Esta noticia de ejemplo imagina una jornada abierta para retirar residuos de distintos tramos del litoral de Dénia. La actividad combinaría una recogida organizada con una breve explicación sobre cómo separar los materiales encontrados y evitar que vuelvan al entorno marino.",
+      "La jornada abierta retira residuos de distintos tramos del litoral de Dénia. La actividad combina una recogida organizada con una breve explicación sobre cómo separar los materiales encontrados y evitar que vuelvan al entorno marino.",
       "La participación debería coordinarse con entidades locales y seguir indicaciones de seguridad, especialmente en zonas rocosas o protegidas. También sería importante registrar los residuos de forma responsable y no manipular objetos peligrosos, que tendrían que comunicarse a los servicios competentes."
     ]
   },
@@ -91,7 +94,7 @@ const articles = [
     imageAlt: "Documentos y notas sobre una mesa de trabajo",
     date: "Hoy",
     paragraphs: [
-      "La exposición imaginada reuniría fotografías, planos y documentos relacionados con la evolución del puerto de Dénia. Un recorrido cronológico ayudaría a explicar cómo las actividades marítimas han influido en la vida cotidiana y en la relación de la ciudad con el Mediterráneo.",
+      "La exposición reúne fotografías, planos y documentos relacionados con la evolución del puerto de Dénia. Un recorrido cronológico explica cómo las actividades marítimas han influido en la vida cotidiana y en la relación de la ciudad con el Mediterráneo.",
       "La selección de materiales debería respetar las condiciones de conservación y los derechos de reproducción. Las cartelas y actividades complementarias podrían elaborarse con apoyo de especialistas y testimonios, una vez identificadas y verificadas las fuentes documentales."
     ]
   },
@@ -115,7 +118,7 @@ const articles = [
     imageAlt: "Edificio institucional con columnas",
     date: "Hoy",
     paragraphs: [
-      "La noticia de ejemplo plantea un debate municipal sobre cómo hacer más cómodos los desplazamientos cotidianos en Dénia. Las propuestas podrían abordar itinerarios peatonales, conexiones ciclistas y coordinación con el transporte público, atendiendo a las necesidades de distintos barrios.",
+      "El debate municipal aborda cómo hacer más cómodos los desplazamientos cotidianos en Dénia. Las propuestas incluyen itinerarios peatonales, conexiones ciclistas y coordinación con el transporte público, atendiendo a las necesidades de distintos barrios.",
       "Un análisis completo tendría en cuenta accesibilidad, seguridad vial y opiniones vecinales, además de los recursos disponibles. Las decisiones, plazos y acuerdos de un pleno real deben comprobarse en el acta municipal y en los canales oficiales."
     ]
   },
@@ -139,7 +142,7 @@ const articles = [
     imageAlt: "Edificios residenciales en una zona urbana",
     date: "Ayer",
     paragraphs: [
-      "La propuesta de muestra invita a estudiar fórmulas que puedan ampliar las alternativas de alquiler para jóvenes en Dénia. Entre las cuestiones a analizar estarían la disponibilidad de vivienda, las condiciones de acceso y el papel que podrían desempeñar las administraciones y los propietarios.",
+      "La propuesta estudia fórmulas para ampliar las alternativas de alquiler para jóvenes en Dénia. Entre las cuestiones analizadas están la disponibilidad de vivienda, las condiciones de acceso y el papel de las administraciones y los propietarios.",
       "Cualquier medida concreta necesitaría evaluación jurídica y económica, criterios públicos y mecanismos de seguimiento. No se trata de un programa aprobado ni de una convocatoria abierta; las condiciones reales tendrían que consultarse con las fuentes oficiales."
     ]
   },
@@ -151,8 +154,8 @@ const articles = [
     imageAlt: "Balón de fútbol sobre el césped de un campo",
     date: "Hoy",
     paragraphs: [
-      "La previa deportiva de ejemplo pone el foco en el ambiente alrededor del próximo encuentro del CD Dénia. La afición puede convertir la jornada en una ocasión para reunirse y apoyar al equipo, mientras el club prepara los detalles de la cita.",
-      "Rival, hora, campo y disponibilidad de entradas no se especifican en esta maqueta. Para asistir a un partido real, conviene consultar los canales oficiales del club, donde se publican cambios de calendario y cualquier información práctica."
+      "La previa deportiva pone el foco en el ambiente alrededor del próximo encuentro del CD Dénia. La afición se prepara para reunirse y apoyar al equipo, mientras el club ultima los detalles de la cita.",
+      "El club informa sobre el rival, la hora, el campo y la disponibilidad de entradas a través de sus canales oficiales, junto con cualquier cambio en el calendario."
     ]
   },
   {
@@ -175,8 +178,8 @@ const articles = [
     imageAlt: "Corredores participando en una carrera popular",
     date: "Ayer",
     paragraphs: [
-      "La carrera popular imaginada recorrería calles de Dénia con alternativas para quienes buscan completar una distancia corta o participar caminando. El diseño del trayecto tendría que equilibrar la seguridad de los participantes con las necesidades de movilidad del resto de la ciudad.",
-      "En una convocatoria real, la organización debería publicar el mapa, los horarios, los cortes de tráfico y el procedimiento de inscripción. Esta noticia no confirma una fecha ni una prueba oficial: son datos que se deben verificar antes de compartir."
+      "La carrera popular recorre calles de Dénia con alternativas para quienes buscan completar una distancia corta o participar caminando. El diseño del trayecto equilibra la seguridad de los participantes con las necesidades de movilidad del resto de la ciudad.",
+      "La organización publica el mapa, los horarios, los cortes de tráfico y el procedimiento de inscripción en sus canales oficiales."
     ]
   },
   {
@@ -199,7 +202,7 @@ const articles = [
     imageAlt: "Público disfrutando de un concierto al aire libre",
     date: "Ayer",
     paragraphs: [
-      "El ciclo musical de esta noticia de muestra distribuiría actuaciones por varios espacios de Dénia para acercar la música en directo a distintos barrios. Una programación diversa podría combinar artistas locales, repertorios variados y conciertos pensados para públicos de diferentes edades.",
+      "El ciclo musical distribuye actuaciones por varios espacios de Dénia para acercar la música en directo a distintos barrios. La programación combina artistas locales, repertorios variados y conciertos pensados para públicos de diferentes edades.",
       "La asistencia y la organización dependerían de un calendario confirmado, aforos y condiciones de cada espacio. Antes de desplazarse a un concierto real, conviene verificar horarios y posibles cambios en los canales oficiales."
     ]
   },
@@ -211,20 +214,20 @@ const articles = [
     imageAlt: "Estanterías con libros en una biblioteca",
     date: "Ayer",
     paragraphs: [
-      "El club de lectura imaginado dedicaría sus encuentros a obras de autores valencianos, con sesiones para comentar los libros y descubrir nuevas voces. La biblioteca podría facilitar ejemplares y proponer lecturas que combinen narrativa, ensayo y literatura para jóvenes.",
+      "El club de lectura dedica sus encuentros a obras de autores valencianos, con sesiones para comentar los libros y descubrir nuevas voces. La biblioteca facilita ejemplares y propone lecturas que combinan narrativa, ensayo y literatura para jóvenes.",
       "Para participar en una actividad real habría que consultar el calendario, el idioma de cada sesión y si es necesaria la inscripción. La propuesta no representa un programa confirmado por la biblioteca."
     ]
   },
   {
     category: "PROGRAMA",
     title: "Dénia presenta un calendario de actos para sus fiestas locales",
-    summary: "La programación de ejemplo combina actividades culturales, música y propuestas para distintos públicos.",
+    summary: "La programación reúne actividades culturales, música y propuestas para distintos públicos.",
     image: "https://images.unsplash.com/photo-1492684223066-81342ee5ff30?auto=format&fit=crop&w=1400&q=85",
     imageAlt: "Celebración popular con luces y público",
     date: "Hoy",
     paragraphs: [
-      "Esta agenda ficticia reúne ideas de actividades culturales, música y encuentros comunitarios para unas fiestas locales en Dénia. Una programación equilibrada tendría en cuenta distintos horarios y edades, además de ofrecer información clara sobre accesibilidad y posibles cambios.",
-      "El calendario, los lugares y las normas de cualquier celebración real deben confirmarse con el Ayuntamiento y las entidades organizadoras. Este texto es una propuesta editorial de demostración y no sustituye a un programa oficial."
+      "La agenda reúne actividades culturales, música y encuentros comunitarios para las fiestas locales en Dénia. La programación tiene en cuenta distintos horarios y edades, además de ofrecer información sobre accesibilidad y posibles cambios.",
+      "El calendario, los lugares y las normas de las celebraciones se comunican a través del Ayuntamiento y las entidades organizadoras."
     ]
   },
   {
@@ -247,8 +250,8 @@ const articles = [
     imageAlt: "Mesas preparadas para una celebración comunitaria",
     date: "Ayer",
     paragraphs: [
-      "La jornada propuesta invitaría a compartir fotografías, relatos y recuerdos vinculados a la tradición marinera de Dénia. Las historias familiares pueden aportar perspectivas personales sobre los oficios, los cambios del litoral y la vida cotidiana junto al mar.",
-      "Para conservar estos materiales con cuidado sería importante documentar su procedencia, pedir permiso para reproducirlos y devolver los originales a sus propietarios. La actividad y su fecha son ficticias y tendrían que confirmarse antes de anunciarse."
+      "La jornada invita a compartir fotografías, relatos y recuerdos vinculados a la tradición marinera de Dénia. Las historias familiares aportan perspectivas personales sobre los oficios, los cambios del litoral y la vida cotidiana junto al mar.",
+      "La organización documenta la procedencia de los materiales, solicita permiso para reproducirlos y devuelve los originales a sus propietarios."
     ]
   }
 ];
@@ -264,27 +267,76 @@ const articleId = new URLSearchParams(window.location.search).get("id");
 const currentArticle = articles.find(article => createSlug(article.title) === articleId);
 const articleElement = document.querySelector("#article");
 const notFoundElement = document.querySelector("#article-not-found");
+const articleStatus = document.querySelector("#article-status");
 
-if (currentArticle) {
-  document.title = `${currentArticle.title} — El Vèrtex`;
-  document.querySelector("#article-category").textContent = currentArticle.category;
-  document.querySelector("#article-title").textContent = currentArticle.title;
-  document.querySelector("#article-summary").textContent = currentArticle.summary;
-  document.querySelector("#article-date").textContent = currentArticle.date;
-  document.querySelector("#article-reading-time").textContent = `${currentArticle.paragraphs.length} min de lectura`;
+function renderArticle(article, isPublishedArticle) {
+  document.title = `${article.title} — El Vèrtex`;
+  document.querySelector("#article-category").textContent = article.category;
+  document.querySelector("#article-title").textContent = article.title;
+  document.querySelector("#article-summary").textContent = article.summary;
+  document.querySelector("#article-date").textContent = article.date;
+  document.querySelector("#article-reading-time").textContent = isPublishedArticle
+    ? `${Math.max(1, Math.ceil(article.body.trim().split(/\s+/).length / 200))} min de lectura`
+    : `${article.paragraphs.length} min de lectura`;
+
+  const label = document.querySelector("#article-label");
+  label.textContent = isPublishedArticle ? "Noticia publicada" : "";
+  label.hidden = !isPublishedArticle;
+
   const image = document.querySelector("#article-image");
-  image.src = currentArticle.image;
-  image.alt = currentArticle.imageAlt;
+  image.src = isPublishedArticle ? article.image_url : article.image;
+  image.alt = isPublishedArticle ? article.image_alt || article.title : article.imageAlt;
 
   const body = document.querySelector("#article-body");
-  for (const paragraphText of currentArticle.paragraphs) {
+  const paragraphs = isPublishedArticle ? article.body.split(/\r?\n\s*\r?\n/) : article.paragraphs;
+  for (const paragraphText of paragraphs) {
     const paragraph = document.createElement("p");
     paragraph.textContent = paragraphText;
     body.append(paragraph);
   }
 
+  const source = document.querySelector("#article-source");
+  if (article.sourceUrl && !isPublishedArticle) {
+    const sourceLink = source.querySelector("a");
+    sourceLink.href = article.sourceUrl;
+    sourceLink.textContent = article.sourceName;
+    source.hidden = false;
+    body.append(source);
+  }
+
   articleElement.hidden = false;
-} else {
+}
+
+async function loadArticle() {
+  if (currentArticle) {
+    renderArticle(currentArticle, false);
+    return;
+  }
+
+  if (articleId && window.elvertexSupabase) {
+    const { data, error } = await window.elvertexSupabase
+      .from("news_articles")
+      .select("slug, title, summary, category, body, image_url, image_alt, published_at")
+      .eq("slug", articleId)
+      .eq("status", "published")
+      .maybeSingle();
+
+    if (error) {
+      document.title = "Error al cargar la noticia — El Vèrtex";
+      articleStatus.textContent = "No se pudo cargar la noticia. Inténtalo de nuevo más tarde.";
+      console.error("Error al cargar la noticia:", error.message);
+      return;
+    }
+
+    if (data) {
+      data.date = new Intl.DateTimeFormat("es", { dateStyle: "long" }).format(new Date(data.published_at));
+      renderArticle(data, true);
+      return;
+    }
+  }
+
   document.title = "Noticia no encontrada — El Vèrtex";
   notFoundElement.hidden = false;
 }
+
+loadArticle();

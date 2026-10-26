@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#f2f2f2">
+    <meta name="robots" content="noindex, nofollow">
+    <title>Redacción — El Vèrtex</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <div class="topline">
+      <div class="container topline-inner"><span class="edition">PANEL DE REDACCIÓN</span><time class="edition" data-current-date></time></div>
+    </div>
+    <header class="site-header">
+      <div class="container header-main">
+        <a class="brand" href="index.html" aria-label="El Vèrtex, ir al inicio">
+          <img class="brand-logo" src="assets/el_vèrtex_logo_1.png" alt="El Vèrtex">
+        </a>
+        <a class="article-home-link" href="index.html">Ver la web</a>
+      </div>
+    </header>
+    <main class="container editorial-page">
+      <span class="eyebrow">GESTIÓN EDITORIAL</span>
+      <h1>Redacción</h1>
+      <p class="editorial-intro">Escribe una noticia, guárdala como borrador y publícala cuando esté lista.</p>
+      <div class="editorial-notice" id="editorial-setup-notice" hidden></div>
+      <section id="editorial-login" hidden aria-labelledby="login-title">
+        <h2 id="login-title">Iniciar sesión</h2>
+        <form class="editorial-form" id="login-form">
+          <label>Correo electrónico<input type="email" name="email" autocomplete="username" required></label>
+          <label>Contraseña<input type="password" name="password" autocomplete="current-password" required></label>
+          <div class="editorial-actions"><button class="editorial-button" type="submit">Entrar</button></div>
+        </form>
+      </section>
+      <section id="editorial-dashboard" hidden aria-labelledby="editorial-form-title">
+        <div class="editorial-actions">
+          <h2 id="editorial-form-title">Nueva noticia</h2>
+          <button class="editorial-button editorial-button-secondary" id="logout-button" type="button">Cerrar sesión</button>
+        </div>
+        <form class="editorial-form" id="article-form">
+          <input type="hidden" name="id">
+          <input type="hidden" name="publishedAt">
+          <label>Titular<input name="title" maxlength="180" required></label>
+          <label>Sección
+            <select name="category" required>
+              <option value="">Selecciona una sección</option>
+              <option>Actualidad</option><option>Sucesos</option><option>Política</option>
+              <option>Deportes</option><option>Cultura</option><option>Fiestas</option>
+            </select>
+          </label>
+          <label>Resumen<input name="summary" maxlength="400" required></label>
+          <label>Noticia completa<textarea name="body" minlength="50" maxlength="30000" placeholder="Escribe el texto. Separa los párrafos con una línea en blanco." required></textarea></label>
+          <label>Fotografía<input name="image" type="file" accept="image/jpeg,image/png,image/webp"></label>
+          <label>Texto alternativo de la imagen<input name="imageAlt" maxlength="180" placeholder="Describe brevemente la fotografía"></label>
+          <label>URL de la imagen (opcional si subes una fotografía)<input name="imageUrl" type="url" placeholder="https://…"></label>
+          <div class="editorial-actions">
+            <button class="editorial-button editorial-button-secondary" type="submit" name="status" value="draft">Guardar borrador</button>
+            <button class="editorial-button" type="submit" name="status" value="published">Publicar noticia</button>
+            <button class="editorial-button editorial-button-secondary" id="cancel-edit-button" type="button" hidden>Cancelar edición</button>
+          </div>
+        </form>
+        <p class="editorial-message" id="editorial-message" role="status" aria-live="polite"></p>
+        <section aria-labelledby="saved-articles-title">
+          <h2 id="saved-articles-title">Noticias guardadas</h2>
+          <ul class="editorial-list" id="editorial-article-list"></ul>
+        </section>
+      </section>
+      <p class="editorial-message" id="editorial-login-message" role="status" aria-live="polite"></p>
+    </main>
+    <footer class="site-footer">
+      <div class="container footer-bottom"><span>© 2026 El Vèrtex</span><a href="index.html">Inicio</a></div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2/dist/umd/supabase.js"></script>
+    <script src="supabase-config.js"></script>
+    <script src="supabase-client.js"></script>
+    <script src="fecha.js"></script>
+    <script src="redaccion.js"></script>
+  </body>
+</html>

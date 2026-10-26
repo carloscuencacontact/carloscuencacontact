@@ -11,7 +11,7 @@
   <body>
     <div class="topline">
       <div class="container topline-inner">
-        <span class="edition">EDICIÓN DE EJEMPLO · Contenido ficticio para la maqueta</span>
+        <time class="edition" data-current-date></time>
       </div>
     </div>
     <header class="site-header">
@@ -30,7 +30,7 @@
           <h1 id="article-title"></h1>
           <p class="article-summary" id="article-summary"></p>
           <div class="article-meta">
-            <span>Contenido ficticio · Verificar antes de publicar</span>
+            <span id="article-label"></span>
             <span id="article-date"></span>
             <span id="article-reading-time"></span>
           </div>
@@ -40,8 +40,10 @@
         </figure>
         <section class="article-body" id="article-body" aria-labelledby="article-body-title">
           <h2 id="article-body-title">Más información</h2>
+          <p class="article-source" id="article-source" hidden>Fuente: <a target="_blank" rel="noopener noreferrer"></a></p>
         </section>
       </article>
+      <p class="editorial-message" id="article-status" role="status" aria-live="polite"></p>
       <div class="article-not-found" id="article-not-found" role="status" hidden>
         <h1>No encontramos esta noticia</h1>
         <p>Puede que el enlace no sea válido o que la noticia ya no esté disponible.</p>
@@ -54,6 +56,10 @@
         <a href="index.html">Inicio</a>
       </div>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2/dist/umd/supabase.js"></script>
+    <script src="supabase-config.js"></script>
+    <script src="supabase-client.js"></script>
+    <script src="fecha.js"></script>
     <script src="noticia.js"></script>
   </body>
 </html>
