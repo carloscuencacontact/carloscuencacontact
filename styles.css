@@ -20,7 +20,7 @@ img { display: block; width: 100%; height: 100%; object-fit: cover; }
 .container { width: min(1120px, calc(100% - 64px)); margin-inline: auto; }
 
 .topline { height: 34px; background: #222; color: #c4c4c4; font-size: 9px; font-weight: 600; letter-spacing: .14em; }
-.topline-inner { display: flex; height: 100%; align-items: center; justify-content: space-between; }
+.topline-inner { display: flex; height: 100%; align-items: center; justify-content: flex-end; }
 .edition { color: #a0a0a0; letter-spacing: .04em; }
 .site-header { background: var(--paper); }
 .header-main { height: 100px; display: flex; align-items: center; justify-content: space-between; }
@@ -32,6 +32,7 @@ img { display: block; width: 100%; height: 100%; object-fit: cover; }
 .social-icon-link:hover { transform: translateY(-2px); background: var(--ink); color: var(--white); }
 .social-icon-link svg { width: 17px; height: 17px; fill: none; stroke: currentColor; stroke-width: 1.8; }
 .social-icon-link svg path { fill: currentColor; stroke: none; }
+.social-icon-link svg.email-icon path { fill: none; stroke: currentColor; stroke-linecap: round; stroke-linejoin: round; }
 .social-icon-link svg .instagram-dot { fill: currentColor; stroke: none; }
 .brand { display: inline-flex; align-items: center; gap: 10px; }
 .brand-mark { display: grid; width: 39px; height: 39px; place-items: center; background: var(--accent-soft); color: var(--ink); font-family: var(--serif); font-size: 28px; font-weight: 800; }
@@ -77,6 +78,9 @@ img { display: block; width: 100%; height: 100%; object-fit: cover; }
 .carousel-control:hover { background: var(--ink); color: var(--white); }
 .carousel-previous { left: 12px; }
 .carousel-next { right: 12px; }
+.carousel-pagination { display: none; }
+.carousel-dot-button { width: 8px; height: 8px; padding: 0; border: 0; border-radius: 50%; background: #bcbcbc; cursor: pointer; }
+.carousel-dot-button[aria-current="true"] { background: var(--ink); }
 .image-index { position: absolute; right: 11px; bottom: 10px; color: var(--white); font-family: var(--serif); font-size: 20px; font-weight: 700; text-shadow: 0 1px 4px #0008; }
 .story-content { align-self: center; padding: 26px; }
 .story-category { color: var(--accent); font-size: 8px; font-weight: 700; letter-spacing: .13em; }
@@ -111,8 +115,13 @@ img { display: block; width: 100%; height: 100%; object-fit: cover; }
 .footer-bottom { display: flex; justify-content: space-between; gap: 20px; padding-top: 16px; border-top: 1px solid #444; color: #9e9e9e; font-size: 9px; }
 .footer-bottom div { display: flex; flex-wrap: wrap; gap: 20px; }
 
+@media (max-width: 900px) {
+  .news-card-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .footer-main { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+
 @media (max-width: 760px) {
-  .container { width: min(100% - 40px, 560px); }
+  .container { width: calc(100% - 40px); }
   .topline { font-size: 8px; }
   .edition { font-size: 8px; }
   .header-main { height: 80px; }
@@ -128,14 +137,17 @@ img { display: block; width: 100%; height: 100%; object-fit: cover; }
   .lead-copy h2 { max-width: 560px; font-size: 38px; }
   .lead-summary { max-width: 550px; }
   .news-section { padding: 34px 0; }
-  .story-content h2 { max-width: 560px; font-size: 38px; }
+  .story-card .story-content h2 { max-width: 560px; font-size: 28px; }
+  .carousel-viewport { touch-action: pan-y; }
+  .carousel-control { display: none; }
+  .carousel-pagination { display: flex; justify-content: center; gap: 10px; padding-top: 14px; }
   .story-content { padding: 16px; }
   .story-content h3 { font-size: 16px; }
   .story-content p { font-size: 10px; }
   .news-card-grid { gap: 13px; }
   .news-card .story-content { padding: 13px 12px 15px; }
   .news-card .story-content h3 { font-size: 15px; }
-  .footer-main { grid-template-columns: 1.3fr 1fr 1.3fr; row-gap: 28px; }
+  .footer-main { row-gap: 28px; }
   .footer-brand { grid-column: 1 / -1; }
   .footer-bottom { flex-direction: column; }
 }
@@ -143,11 +155,10 @@ img { display: block; width: 100%; height: 100%; object-fit: cover; }
 @media (max-width: 480px) {
   .container { width: calc(100% - 32px); }
   .topline-inner { gap: 10px; }
-  .topline-inner > span:first-child { max-width: 145px; line-height: 1.2; }
   .header-main { height: 72px; }
   .brand { gap: 6px; }
   .brand-mark { width: 30px; height: 30px; font-size: 21px; }
-  .brand-name { font-size: 20px; letter-spacing: -.05em; }
+  .brand-name { font-size: clamp(17px, 5.2vw, 20px); letter-spacing: -.05em; }
   .nav-inner { gap: 0 14px; }
   .header-actions { gap: 7px; }
   .header-social { gap: 5px; }
@@ -155,12 +166,10 @@ img { display: block; width: 100%; height: 100%; object-fit: cover; }
   .social-icon-link svg { width: 15px; height: 15px; }
   .language-toggle { padding: 8px 6px; font-size: 8px; }
   .lead-copy h2, .story-content h2 { font-size: 34px; }
+  .story-card .story-content h2 { font-size: 25px; line-height: 1.2; }
   .section-heading { align-items: flex-start; }
   .section-heading h2 { font-size: 25px; }
   .text-link { max-width: 106px; padding-top: 19px; font-size: 9px; line-height: 1.5; }
-  .carousel-control { width: 30px; height: 30px; font-size: 17px; }
-  .carousel-previous { left: 8px; }
-  .carousel-next { right: 8px; }
   .story-card { min-height: auto; grid-template-columns: 1fr; }
   .story-image { min-height: 0; aspect-ratio: 1.65; }
   .story-content { padding: 15px; }
@@ -168,10 +177,10 @@ img { display: block; width: 100%; height: 100%; object-fit: cover; }
   .story-content p { display: block; }
   .story-meta { gap: 5px; font-size: 8px; }
   .news-card-grid { grid-template-columns: 1fr; gap: 14px; }
-  .news-card { display: grid; grid-template-columns: 38% 1fr; }
-  .news-card-image { min-height: 100%; aspect-ratio: auto; }
+  .news-card { display: flex; }
+  .news-card-image { min-height: 0; aspect-ratio: 1.65; }
   .news-card .story-content { padding: 13px; }
-  .news-card .story-content p { display: none; }
+  .news-card .story-content p { display: block; }
   .footer-main { grid-template-columns: 1fr 1fr; gap: 25px 15px; }
   .footer-brand { grid-column: 1 / -1; }
   .footer-column:nth-child(4) { grid-column: 2; }

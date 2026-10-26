@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="es">
+<html lang="ca-valencia">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -11,7 +11,6 @@
   <body>
     <div class="topline">
       <div class="container topline-inner">
-        <span>INFORMACIÓN INDEPENDIENTE</span>
         <span class="edition">Lunes, 26 de octubre de 2026</span>
       </div>
     </div>
@@ -23,7 +22,7 @@
           <span class="brand-name">marina alta<span> al día.</span></span>
         </a>
         <div class="header-actions">
-          <button class="language-toggle" id="language-toggle" type="button" aria-label="Canviar a valencià">Valencià</button>
+          <button class="language-toggle" id="language-toggle" type="button" aria-label="Canvia a castellà">Castellano</button>
           <nav class="header-social" aria-label="Redes sociales">
             <a class="social-icon-link" href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" aria-label="Instagram" title="Instagram">
               <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><rect x="3" y="3" width="18" height="18" rx="5"></rect><circle cx="12" cy="12" r="4"></circle><circle class="instagram-dot" cx="17.5" cy="6.5" r="1"></circle></svg>
@@ -32,7 +31,7 @@
               <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M18.9 2H22l-6.8 7.8L23.2 22h-6.3L12 14.6 5.6 22H2.4l7.3-8.4L1.9 2h6.5l4.4 6.7L18.9 2Zm-1.1 18h1.7L7.4 3.9H5.6L17.8 20Z"></path></svg>
             </a>
             <a class="social-icon-link" href="mailto:contacto@marinaaldia.es" aria-label="Correo electrónico" title="Correo electrónico">
-              <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><rect x="3" y="5" width="18" height="14" rx="2"></rect><path d="m4 7 8 6 8-6"></path></svg>
+              <svg class="email-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M3 6.5 12 13l9-6.5M4 5h16a1 1 0 0 1 1 1v12H3V6a1 1 0 0 1 1-1Z"></path></svg>
             </a>
           </nav>
         </div>
@@ -77,12 +76,17 @@
             </div>
           </div>
           <button class="carousel-control carousel-next" type="button" aria-label="Noticia siguiente">→</button>
+          <div class="carousel-pagination" role="group" aria-label="Selección de noticia">
+            <button class="carousel-dot-button" type="button" aria-label="Noticia 1" aria-current="true"></button>
+            <button class="carousel-dot-button" type="button" aria-label="Noticia 2"></button>
+            <button class="carousel-dot-button" type="button" aria-label="Noticia 3"></button>
+          </div>
         </div>
       </section>
 
       <section class="news-section" id="actualidad" aria-labelledby="actualidad-title">
         <div class="section-heading">
-          <div><span class="eyebrow">LA COMARCA, AL DÍA</span><h2 id="actualidad-title">Actualidad</h2></div>
+          <div><span class="eyebrow">INFORMACIÓN DE PROXIMIDAD</span><h2 id="actualidad-title">Actualidad</h2></div>
         </div>
         <div class="news-card-grid">
           <article class="news-card"><a class="news-card-image image-frame" href="mailto:contacto@marinaaldia.es?subject=Noticia%3A%20Transporte%20comarcal" aria-label="Leer noticia sobre transporte comarcal"><img src="https://images.unsplash.com/photo-1519501025264-65ba15a82390?auto=format&fit=crop&w=900&q=80" alt="Vista urbana con calles y edificios"></a><div class="story-content"><span class="story-category">SERVICIOS</span><h3><a href="mailto:contacto@marinaaldia.es?subject=Noticia%3A%20Transporte%20comarcal">La comarca estudia nuevas conexiones entre sus municipios</a></h3><p>La propuesta busca facilitar los desplazamientos diarios y mejorar la conexión con los servicios esenciales.</p><span class="story-meta">Hoy, 12:20 <span>·</span> 4 min de lectura</span></div></article>
@@ -93,7 +97,7 @@
 
       <section class="news-section" id="sucesos" aria-labelledby="sucesos-title">
         <div class="section-heading">
-          <div><span class="eyebrow">INFORMACIÓN CERCANA</span><h2 id="sucesos-title">Sucesos</h2></div>
+          <div><span class="eyebrow">MINUTO A MINUTO</span><h2 id="sucesos-title">Sucesos</h2></div>
         </div>
         <div class="news-card-grid">
           <article class="news-card">
@@ -141,7 +145,7 @@
       </section>
 
       <section class="news-section" id="cultura" aria-labelledby="cultura-title">
-        <div class="section-heading"><div><span class="eyebrow">CREACIÓN Y VIDA CULTURAL</span><h2 id="cultura-title">Cultura</h2></div></div>
+        <div class="section-heading"><div><span class="eyebrow">VIDA CULTURAL</span><h2 id="cultura-title">Cultura</h2></div></div>
         <div class="news-card-grid">
           <article class="news-card"><a class="news-card-image image-frame" href="mailto:contacto@marinaaldia.es?subject=Noticia%3A%20Exposici%C3%B3n" aria-label="Leer noticia sobre una exposición"><img src="https://images.unsplash.com/photo-1577083552431-6e5fd01aa342?auto=format&fit=crop&w=900&q=80" alt="Obras expuestas en una galería de arte"></a><div class="story-content"><span class="story-category">ARTES VISUALES</span><h3><a href="mailto:contacto@marinaaldia.es?subject=Noticia%3A%20Exposici%C3%B3n">Una exposición colectiva reúne a artistas de la Marina Alta</a></h3><p>La muestra propone un recorrido por distintas miradas y lenguajes creativos de la comarca.</p><span class="story-meta">Hoy, 10:15 <span>·</span> 3 min de lectura</span></div></article>
           <article class="news-card"><a class="news-card-image image-frame" href="mailto:contacto@marinaaldia.es?subject=Noticia%3A%20M%C3%BAsica" aria-label="Leer noticia sobre música"><img src="https://images.unsplash.com/photo-1501386761578-eac5c94b800a?auto=format&fit=crop&w=900&q=80" alt="Público disfrutando de un concierto al aire libre"></a><div class="story-content"><span class="story-category">MÚSICA</span><h3><a href="mailto:contacto@marinaaldia.es?subject=Noticia%3A%20M%C3%BAsica">La música en directo vuelve a llenar los espacios públicos</a></h3><p>El ciclo cultural ofrecerá actuaciones abiertas y gratuitas durante las próximas semanas.</p><span class="story-meta">Ayer, 19:30 <span>·</span> 4 min de lectura</span></div></article>

@@ -12,7 +12,7 @@ const valencianText = {
   "Cultura": "Cultura",
   "Fiestas": "Festes",
   "Correo electrónico": "Correu electrònic",
-  "LA COMARCA, AL DÍA": "LA COMARCA, AL DIA",
+  "INFORMACIÓN DE PROXIMIDAD": "INFORMACIÓ DE PROXIMITAT",
   "SERVICIOS": "SERVEIS",
   "La comarca estudia nuevas conexiones entre sus municipios": "La comarca estudia noves connexions entre els seus municipis",
   "La propuesta busca facilitar los desplazamientos diarios y mejorar la conexión con los servicios esenciales.": "La proposta vol facilitar els desplaçaments diaris i millorar la connexió amb els serveis essencials.",
@@ -25,7 +25,7 @@ const valencianText = {
   "Los centros educativos presentan sus proyectos para este curso": "Els centres educatius presenten els seus projectes per a aquest curs",
   "La programación incluye actividades abiertas a las familias y nuevas propuestas de aprendizaje.": "La programació inclou activitats obertes a les famílies i noves propostes d'aprenentatge.",
   "Ayer, 17:40": "Ahir, 17:40",
-  "CREACIÓN Y VIDA CULTURAL": "CREACIÓ I VIDA CULTURAL",
+  "VIDA CULTURAL": "VIDA CULTURAL",
   "ARTES VISUALES": "ARTS VISUALS",
   "Una exposición colectiva reúne a artistas de la Marina Alta": "Una exposició col·lectiva reuneix artistes de la Marina Alta",
   "La muestra propone un recorrido por distintas miradas y lenguajes creativos de la comarca.": "La mostra proposa un recorregut per diverses mirades i llenguatges creatius de la comarca.",
@@ -85,7 +85,7 @@ const valencianText = {
   "Una red de espacios colaborativos abre sus puertas para impulsar ideas y compartir conocimientos.": "Una xarxa d'espais col·laboratius obri les portes per a impulsar idees i compartir coneixements.",
   "Hace 2 h": "Fa 2 h",
   "5 min": "5 min",
-  "INFORMACIÓN CERCANA": "INFORMACIÓ DE PROXIMITAT",
+  "MINUTO A MINUTO": "MINUT A MINUT",
   "03 noticias": "03 notícies",
   "Contactar redacción": "Contactar amb la redacció",
   "SEGURIDAD": "SEGURETAT",
@@ -194,6 +194,10 @@ const valencianText = {
   "Redes sociales": "Xarxes socials",
   "Noticia anterior": "Notícia anterior",
   "Noticia siguiente": "Notícia següent",
+  "Selección de noticia": "Selecció de notícia",
+  "Noticia 1": "Notícia 1",
+  "Noticia 2": "Notícia 2",
+  "Noticia 3": "Notícia 3",
   "Redes sociales": "Xarxes socials"
 };
 
@@ -244,14 +248,37 @@ languageToggle.addEventListener("click", () => {
 });
 
 const carouselTrack = document.querySelector(".story-grid");
+const carouselViewport = document.querySelector(".carousel-viewport");
 const carouselCards = [...document.querySelectorAll(".story-card")];
+const carouselDots = [...document.querySelectorAll(".carousel-dot-button")];
 let activeSlide = 0;
 
 function showSlide(index) {
   activeSlide = (index + carouselCards.length) % carouselCards.length;
   carouselTrack.style.transform = `translateX(-${activeSlide * 100}%)`;
+  carouselDots.forEach((dot, dotIndex) => {
+    if (dotIndex === activeSlide) dot.setAttribute("aria-current", "true");
+    else dot.removeAttribute("aria-current");
+  });
 }
 
 document.querySelector(".carousel-previous").addEventListener("click", () => showSlide(activeSlide - 1));
 document.querySelector(".carousel-next").addEventListener("click", () => showSlide(activeSlide + 1));
-setLanguage("es");
+carouselDots.forEach((dot, index) => {
+  dot.addEventListener("click", () => showSlide(index));
+});
+
+let swipeStartX = null;
+carouselViewport.addEventListener("pointerdown", event => {
+  if (event.pointerType === "touch") swipeStartX = event.clientX;
+});
+carouselViewport.addEventListener("pointerup", event => {
+  if (swipeStartX === null) return;
+  const swipeDistance = swipeStartX - event.clientX;
+  if (Math.abs(swipeDistance) > 40) showSlide(activeSlide + (swipeDistance > 0 ? 1 : -1));
+  swipeStartX = null;
+});
+carouselViewport.addEventListener("pointercancel", () => {
+  swipeStartX = null;
+});
+setLanguage("val");
